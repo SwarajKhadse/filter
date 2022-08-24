@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Slider, { SliderTooltip } from 'rc-slider';
+import Slider from 'rc-slider';
 import styled from 'styled-components';
 
 import 'rc-slider/assets/index.css';
@@ -34,15 +34,16 @@ const CustomFilterOptions = ({ imgRef }) => {
         const { value, dragging, index, ...restProps } = props
 
         return (
-            <SliderTooltip
-                prefixCls="rc-slider-tooltip"
-                overlay={`${value} %`}
-                visible={true}
-                placement="top"
-                key={index}
-            >
-                <Handle value={value} {...restProps} />
-            </SliderTooltip>
+            // <SliderTooltip
+            //     prefixCls="rc-slider-tooltip"
+            //     overlay={`${value} %`}
+            //     visible={true}
+            //     placement="top"
+            //     key={index}
+            // >
+            //     <Handle value={value} {...restProps} />
+            // </SliderTooltip>
+            <h1>sjdskjfks</h1>
         )
     }
 
